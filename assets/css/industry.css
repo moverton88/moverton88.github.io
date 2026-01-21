@@ -1,0 +1,94 @@
+/* ==================================
+   industry.css
+   Industry-specific refinements
+   ================================== */
+
+/* Slightly tighter overall rhythm */
+.section {
+  padding: 3.5rem 0;
+}
+
+/* Navigation: crisper, more technical */
+.nav-logo {
+  letter-spacing: 0.02em;
+}
+
+.nav-links a {
+  font-weight: 500;
+}
+
+.nav-links a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: var(--transition-fast);
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+/* Hero: stronger emphasis, tighter copy */
+.hero {
+  background: linear-gradient(
+    to bottom,
+    var(--color-white),
+    var(--color-bg)
+  );
+}
+
+.hero h1 {
+  font-size: 2.7rem;
+}
+
+.hero p {
+  max-width: 640px;
+  color: var(--color-muted);
+}
+
+/* Buttons: more decisive feel */
+.btn-primary {
+  letter-spacing: 0.02em;
+}
+
+/* Cards: more "case study" energy */
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--color-muted);
+}
+
+/* Section headers: clearer hierarchy */
+.section-header h2 {
+  font-size: 1.9rem;
+}
+
+/* Links inside cards */
+.card a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-weight: 500;
+}
+
+/* Footer: quieter, more corporate */
+.footer {
+  font-size: 0.85rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+}
