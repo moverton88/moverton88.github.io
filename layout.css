@@ -1,0 +1,77 @@
+/* =========================
+   layout.css
+   Shared layout and structure
+   ========================= */
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Header / Navigation */
+.site-header {
+  background-color: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.nav a {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--color-primary-dark);
+}
+
+.nav a:hover {
+  color: var(--color-accent);
+}
+
+/* Hero Section */
+.hero {
+  padding: 5rem 0 4rem;
+}
+
+.hero h1 {
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  max-width: 650px;
+  font-size: 1.1rem;
+  color: var(--color-muted);
+}
+
+/* Sections */
+.section {
+  padding: 4rem 0;
+}
+
+.section-alt {
+  background-color: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+/* Cards / Blocks */
+.card {
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+}
+
+/* Footer */
+.site-footer {
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: var(--color-muted);
+  text-align: center;
+}
