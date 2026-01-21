@@ -1,23 +1,24 @@
-
-/* =========================
+/* ================================
    base.css
-   Shared variables, typography, resets
-   ========================= */
+   Shared variables, resets, fonts
+   ================================ */
 
-/* Import fonts */
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Franklin:wght@300;400;500;600&display=swap');
 
 :root {
-  /* Color palette */
-  --color-primary: #5DA9E9;          /* Sky blue */
-  --color-primary-dark: #2C5282;     /* Deep blue for headers/nav */
-  --color-accent: #B45353;           /* Muted red accent */
+  /* Colors */
+  --color-primary: #5DA9E9;
+  --color-primary-dark: #2C5282;
 
-  --color-bg: #F9FBFD;               /* Page background */
-  --color-surface: #FFFFFF;          /* Cards / sections */
-  --color-text: #1F2933;             /* Primary text */
-  --color-muted: #6B7280;            /* Secondary text */
-  --color-border: #E5E7EB;           
+  --color-accent: #B84A4A;
+  --color-accent-dark: #9F3F3F;
+
+  --color-bg: #F9FBFD;
+  --color-white: #FFFFFF;
+  --color-text: #1F2933;
+  --color-muted: #6B7280;
+  --color-border: #E5E7EB;
 
   /* Typography */
   --font-heading: 'Inter', sans-serif;
@@ -25,77 +26,119 @@
 
   /* Layout */
   --max-width: 1100px;
+  --section-padding: 4rem;
   --radius-sm: 4px;
   --radius-md: 8px;
 
   /* Motion */
-  --transition-fast: 150ms ease;
-  --transition-base: 250ms ease;
+  --transition-fast: 0.15s ease;
+  --transition-base: 0.25s ease;
 }
 
-/* CSS Reset (minimal, readable) */
-*,
-*::before,
-*::after {
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 html {
-  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 body {
-  margin: 0;
   font-family: var(--font-body);
-  color: var(--color-text);
   background-color: var(--color-bg);
+  color: var(--color-text);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Headings */
+/* Typography */
+
 h1, h2, h3, h4, h5 {
   font-family: var(--font-heading);
   color: var(--color-primary-dark);
-  margin-top: 0;
+  font-weight: 600;
   line-height: 1.25;
 }
 
-h1 { font-size: 2.5rem; }
-h2 { font-size: 2rem; }
-h3 { font-size: 1.5rem; }
-
-/* Text */
-p {
-  margin: 0 0 1rem;
+h1 {
+  font-size: 2.5rem;
 }
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--color-text);
+}
+
+.muted {
+  color: var(--color-muted);
+}
+
+/* Links */
 
 a {
   color: var(--color-primary);
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 2px;
-  transition: color var(--transition-fast);
+  text-decoration: none;
+  transition: var(--transition-fast);
 }
 
 a:hover {
-  color: var(--color-primary-dark);
+  text-decoration: underline;
 }
 
 /* Buttons */
-.button {
+
+.btn {
   display: inline-block;
-  padding: 0.6rem 1.2rem;
+  padding: 0.7rem 1.4rem;
+  border-radius: var(--radius-sm);
   font-family: var(--font-heading);
   font-weight: 500;
-  border-radius: var(--radius-sm);
-  text-decoration: none;
-  background-color: var(--color-accent);
-  color: #ffffff;
-  transition: transform var(--transition-fast), background-color var(--transition-fast);
+  transition: var(--transition-base);
+  cursor: pointer;
 }
 
-.button:hover {
-  background-color: #9f4343;
-  transform: translateY(-1px);
+.btn-primary {
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-accent-dark);
+}
+
+.btn-outline {
+  background: transparent;
+  color: var(--color-primary-dark);
+  border: 1px solid var(--color-border);
+}
+
+.btn-outline:hover {
+  border-color: var(--color-primary);
+}
+
+/* Utilities */
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.divider {
+  width: 60px;
+  height: 3px;
+  background-color: var(--color-accent);
+  margin: 1rem 0;
 }
