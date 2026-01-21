@@ -1,0 +1,101 @@
+
+/* =========================
+   base.css
+   Shared variables, typography, resets
+   ========================= */
+
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Libre+Franklin:wght@300;400;500;600&display=swap');
+
+:root {
+  /* Color palette */
+  --color-primary: #5DA9E9;          /* Sky blue */
+  --color-primary-dark: #2C5282;     /* Deep blue for headers/nav */
+  --color-accent: #B45353;           /* Muted red accent */
+
+  --color-bg: #F9FBFD;               /* Page background */
+  --color-surface: #FFFFFF;          /* Cards / sections */
+  --color-text: #1F2933;             /* Primary text */
+  --color-muted: #6B7280;            /* Secondary text */
+  --color-border: #E5E7EB;           
+
+  /* Typography */
+  --font-heading: 'Inter', sans-serif;
+  --font-body: 'Libre Franklin', sans-serif;
+
+  /* Layout */
+  --max-width: 1100px;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  /* Motion */
+  --transition-fast: 150ms ease;
+  --transition-base: 250ms ease;
+}
+
+/* CSS Reset (minimal, readable) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-heading);
+  color: var(--color-primary-dark);
+  margin-top: 0;
+  line-height: 1.25;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+
+/* Text */
+p {
+  margin: 0 0 1rem;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+  transition: color var(--transition-fast);
+}
+
+a:hover {
+  color: var(--color-primary-dark);
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  font-family: var(--font-heading);
+  font-weight: 500;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  background-color: var(--color-accent);
+  color: #ffffff;
+  transition: transform var(--transition-fast), background-color var(--transition-fast);
+}
+
+.button:hover {
+  background-color: #9f4343;
+  transform: translateY(-1px);
+}
