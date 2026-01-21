@@ -49,7 +49,6 @@
   background: linear-gradient(
     to right,
     var(--color-primary),
-     #FFFFFF,
     var(--color-accent)
   );
 }
