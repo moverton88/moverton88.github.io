@@ -75,6 +75,18 @@
   color: var(--color-muted);
 }
 
+/* ================================
+   Hero → Section Transition
+   ================================ */
+
+.section:first-of-type {
+  background: linear-gradient(
+    to bottom,
+    var(--color-bg),
+    rgba(93, 169, 233, 0.08)
+  );
+}
+
 /* Buttons: more decisive feel */
 .btn-primary {
   letter-spacing: 0.02em;
