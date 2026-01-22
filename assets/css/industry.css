@@ -49,9 +49,9 @@
   height: 4px;
   background: linear-gradient(
     to right,
-    rgba(93, 169, 233, 1),
-    rgba(240, 240, 240, 0.7),
-    rgba(188, 87, 87, 0.5)
+    rgba(93, 169, 233, 1) 0%,
+    rgba(240, 240, 240, 0.7) 66%,
+    rgba(188, 87, 87, 0.5) 82%
   );
 }
 
