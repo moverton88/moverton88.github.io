@@ -47,6 +47,7 @@
   position: relative;
   display: block;
   height: 4px;
+  margin-top: 0.75rem;
   background: linear-gradient(
     to right,
     rgba(93, 169, 233, 1) 0%,
