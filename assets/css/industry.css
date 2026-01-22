@@ -44,6 +44,7 @@
 
 .navbar::after {
   content: "";
+  position: relative;
   display: block;
   height: 4px;
   background: linear-gradient(
