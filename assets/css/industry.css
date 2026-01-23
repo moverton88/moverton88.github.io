@@ -179,8 +179,8 @@
   background: linear-gradient(
     to bottom,
     var(--color-white) 0%,
-    rgba(93, 169, 233, 0.1) 50%,
-     rgba(93, 169, 233, 0.1) 100%
+    rgba(93, 169, 233, 0.16) 50%,
+    var(--color-white) 100%
   );
 }
 
