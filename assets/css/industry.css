@@ -140,11 +140,11 @@
    Hero → Section Transition
    ================================ */
 
-.section:first-of-type {
+.section--expertise {
   background: linear-gradient(
     to bottom,
-    var(--color-bg) 0%,
-    rgba(93, 169, 233, 1) 100%
+    var(--color-bg),
+    rgba(93, 169, 233, 0.16)
   );
 }
 
