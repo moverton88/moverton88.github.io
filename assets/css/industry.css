@@ -175,6 +175,14 @@
   font-weight: 500;
 }
 
+.section--cta {
+  background: linear-gradient(
+    to bottom,
+    var(--color-white),
+    rgba(93, 169, 233, 0.1)
+  );
+}
+
 /* Footer: quieter, more corporate */
 .footer {
   font-size: 0.85rem;
