@@ -59,6 +59,7 @@
 
 .section {
   padding: var(--section-padding) 0;
+  background-color: var(--color-bg);
 }
 
 .section-light {
