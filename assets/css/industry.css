@@ -5,7 +5,7 @@
 
 /* Slightly tighter overall rhythm */
 .section {
-  padding: 3.5rem 0;
+  padding: 3rem 0;
 }
 
 /* Navigation: crisper, more technical */
@@ -94,7 +94,7 @@
 .hero-grid {
   display: grid;
   grid-template-columns: 3fr 1fr;
-  gap: 3rem;
+  gap: 2rem;
   align-items: center;
 }
 
@@ -127,6 +127,13 @@
   .hero-image img {
     max-width: 200px;
   }
+   .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
 }
 
 /* ================================
@@ -137,7 +144,7 @@
   background: linear-gradient(
     to bottom,
     var(--color-bg) 0%,
-    rgba(93, 169, 233, 1) 80%
+    rgba(93, 169, 233, 1) 100%
   );
 }
 
@@ -172,15 +179,3 @@
 .footer {
   font-size: 0.85rem;
 }
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .hero h1 {
-    font-size: 2.2rem;
-  }
-
-  .hero p {
-    font-size: 1rem;
-  }
-}
-
