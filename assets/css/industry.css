@@ -5,7 +5,7 @@
 
 /* Slightly tighter overall rhythm */
 .section {
-  padding: 3rem 0;
+  padding: 1rem 0;
 }
 
 /* Navigation: crisper, more technical */
@@ -113,7 +113,7 @@
 }
 
 .section--hero {
-  padding-bottom: 3rem;
+  padding-bottom: 2rem;
 }
 
 /* Mobile behavior */
