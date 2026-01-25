@@ -147,6 +147,7 @@
 
 .section--expertise {
   padding-top: 3rem;
+   padding-bottom: 3rem;
   background: linear-gradient(
     to bottom,
     var(--color-bg),
