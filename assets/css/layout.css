@@ -63,7 +63,7 @@
 }
 
 .section-light {
-  background-color: var(--color-primary);
+  background-color: rgba(93, 169, 233, 0.1);
 }
 
 .section-header {
