@@ -71,6 +71,7 @@
 
 /* Hero: stronger emphasis, tighter copy */
 .hero {
+  padding: 2rem 0;
   background: linear-gradient(
     to bottom,
     var(--color-white),
