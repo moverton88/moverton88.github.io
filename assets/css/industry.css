@@ -190,6 +190,63 @@
   );
 }
 
+/* ================================
+   Resume Page
+   ================================ */
+
+.section--resume {
+  padding-top: 4rem;
+}
+
+.resume {
+  max-width: 850px;
+}
+
+.resume-header h1 {
+  margin-bottom: 0.5rem;
+}
+
+.resume-meta {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+}
+
+.resume-section {
+  margin-top: 3rem;
+}
+
+.resume-section h2 {
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding-bottom: 0.25rem;
+}
+
+.resume-entry {
+  margin-top: 1.5rem;
+}
+
+.resume-entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.resume-org {
+  font-style: italic;
+  color: var(--color-text-muted);
+  margin-bottom: 0.5rem;
+}
+
+.resume-list {
+  margin-left: 1.25rem;
+}
+
+.resume-footer {
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+}
+
 /* Footer: quieter, more corporate */
 .footer {
   font-size: 0.85rem;
